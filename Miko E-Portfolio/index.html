@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio | DCIT 26</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">            
+            <img src="Images/imglogo.png" alt="Dream Journey Logo" class="imglogo">
+            <div class="logo">Deiua, The Dream Weaver</div>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm Mikojaro O. Cangco and this is my E-Portfolio</p>
+            <button id="explore-btn">Explore My Work</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <p class="aboutp">I am a student at Cavite State University that dreams to make a game that I will love.</p>
+            <h2>Skills & Interests</h2>
+            <div class="skills-tags">
+                <img src="Images/html.png" alt="html img">
+                <img src="Images/css.png" alt="css img">
+                <img src="Images/js.png" alt="js img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <p>My overall projects in Github</p>
+                <button class="details-btn">Github Links</button>
+                <div class="details-content hidden">
+                    <a href="https://deiua-dreamweaver.github.io/Website-to-download-pirated-games/Laboratory%202.html">Website to download pirated games</a>
+                    <a href="https://deiua-dreamweaver.github.io/CANGCO-DCIT-26-Laboratory-3-Folder/DCIT%2026%20-%20Laboratory%203.html">A sample Website</a>
+                    <a href="https://deiua-dreamweaver.github.io/DCIT-26-LAB-4/">Calculator</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume / CV</h2>
+        <div class="resume-box">
+            <h3>Education</h3>
+            <p><strong>Cavite State University</strong> - BS Information Technology</p>
+            <h3>Experience</h3>
+            <p>TNTS Math Game Contest</p>
+            <h3>Skills</h3>
+            <p>I love doing things that pique my interest</p>
+        </div>
+    </section>
+
+    <section id="contact"">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-feedback"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body 
+{ 
+    line-height: 1.6; 
+    color: #181818; 
+    scroll-behavior: smooth; 
+}
+
+/* Navigation */
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    background: #131313;
+    color: rgb(212, 255, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.imglogo {
+    width: 50px;  
+    height: auto;
+}
+
+.nav-container {
+    display: flex;         
+    align-items: center;    
+    gap: 15px;             
+}
+nav ul
+{ 
+    display: flex; 
+    list-style: none; 
+}
+nav ul li 
+{ 
+    margin-left: 70px;
+ }
+nav ul li a 
+{ 
+    color: rgb(227, 255, 167); 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+/* Sections */
+section 
+{ 
+    padding: 80px 10% 40px; 
+    min-height: 60vh; 
+    border-bottom: 1px solid #eee; 
+}
+#home 
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(rgba(82, 99, 0, 0.532), rgba(42, 104, 0, 0.526)), url('Images/welcomeimg.jpg') center/cover;
+    color: rgb(255, 255, 255);
+}
+.content h1
+{
+    font-size: 50px;
+}
+.content p
+{
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+}
+.content button
+{
+    padding: 10px;
+    border-radius: 7px;
+    border: 0;
+    background: linear-gradient(rgb(92, 173, 0), rgba(178, 202, 0, 0.978));
+    color: white;
+}
+#about h2, #projects h2, #resume h2, #contact h2
+{
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+}
+.aboutp
+{
+    text-align: center;
+    margin: 40px;
+}
+.skills-tags
+{
+    display: flex;
+    justify-content: center;
+}
+.skills-tags img
+{
+    width: 90px;
+    height: 100px;
+    margin: 30px;
+}
+#projects
+{
+    background-color: #303400;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+#projects button
+{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    border: 0;
+    background-color: #a3b100;
+    color: white;
+}
+#projects a, #projects a:visited, #projects a:active
+{
+    text-decoration: none;
+    color: white;
+    cursor: default;
+    background-color: #a3b100;
+    padding: 10px;
+    border-radius: 7px;
+}
+.hidden 
+{
+    display: none;
+}
+#resume
+{
+    text-align: center;
+    padding: 10px;
+}
+#resume h3
+{
+    margin: 10px;
+}
+/* Contact Form */
+#contact
+{
+    background-color: #253c00;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    padding: 100px;
+}
+#contact-form 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    max-width: 100%;
+    gap: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+#contact-form input, #contact-form textarea 
+{
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+#contact-form textarea
+{
+    resize: none;
+}
+#contact button
+{
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+#form-feedback
+{
+    text-align: center;
+    margin: 10px;
+    font-weight: 800;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul { display: none; }
+}
